@@ -9,13 +9,17 @@ html * {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  background-color: #d5d5d5 !important;
+  background-color: #f1f1f1 !important;
   transition: background-color 0.5s;
 }
 a {
   text-decoration: none !important;
 }
-
+p {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.4rem;
+}
 #loading {
   width: 100%;
   height: 100%;
@@ -164,38 +168,15 @@ a {
   letter-spacing: 0;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -o-transition: 0.7s;
+  transition: 1s;
 }
 .logo:hover,
 .logo:focus {
   text-decoration: none;
   color: #333333;
 }
-@media only screen and (min-width: 767px) {
-  .logo {
-    font-size: 18px;
-    transform: rotate(90deg);
-    right: 5px;
-    top: 40%;
-  }
-}
-@media (max-width: 767px) {
-  #side-menu {
-    width: 100% !important;
-    height: 40px !important;
-    left: 0px;
-  }
-  .logo {
-    font-size: 18px;
-    top: 100px;
-    left: 0;
-    display: none;
-  }
-  .visible-xs {
-    display: block !important;
-  }
-}
+
 .visible-xs {
   display: none;
 }
@@ -213,30 +194,33 @@ a {
   top: 0;
   right: 0;
   background-color: #111;
-  background-image: ;
+  background-image: url(/img/bg-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 15px 8px 8px 0px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #f5f5f5;
   display: block;
+  text-align: center;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #666666;
 }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 45px;
   /* margin-left: 50px; */
 }
 
@@ -253,3 +237,352 @@ a {
     font-size: 18px;
   }
 }
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px;
+  padding-top: 80px;
+  width: 800px;
+}
+.logo-img {
+  width: 75px;
+}
+h4 {
+  font-family: "Poppins";
+  font-size: 12px !important;
+  font-weight: 600;
+  color: #a1a1a1;
+  letter-spacing: 3px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+h1 {
+  font-size: 44px;
+  font-family: "Poppins";
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 125px;
+  padding-bottom: 25px;
+}
+.navigation_menu {
+  display: block;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 44px !important;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+.reference {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.content1 {
+  width: 60%;
+  height: 400px;
+  color: white;
+}
+@media only screen and (min-width: 767px) {
+  .logo {
+    font-size: 18px;
+    transform: rotate(90deg);
+    right: 5px;
+    top: 50%;
+  }
+}
+@media (max-width: 767px) {
+  #side-menu {
+    width: 100% !important;
+    height: 40px !important;
+    left: 0px;
+  }
+  .logo {
+    font-size: 18px;
+    /* top: 100px; */
+    left: 40;
+    display: none;
+  }
+  .visible-xs {
+    display: block !important;
+  }
+  .content1 {
+    width: 80%;
+  }
+  .desc {
+    width: 90% !important;
+  }
+  h3 {
+    font-size: 25px !important;
+    text-align: left !important;
+  }
+}
+.desc {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+h3 {
+  font-family: "Playfair Display";
+  color: #000;
+  font-size: 36px;
+  text-align: center;
+}
+.btn {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 10px 16px;
+  color: #ffffff;
+  background: #111111;
+  border: solid 1px;
+  border-color: #111111;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 30px auto;
+}
+.btn:hover {
+  color: #000;
+  background: #f1f1f1;
+  border: solid 1px;
+  border-color: #111111;
+}
+.portfolio-intro {
+  height: 150px;
+  padding-top: 35px;
+  text-align: center;
+}
+.portfolio_section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+.portfolio-grid {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1080px;
+}
+[class^="portfolio_section_box-"] {
+  display: flex;
+  width: 360px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.reference-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 38px !important;
+  line-height: 65px;
+  color: #222;
+}
+.line {
+  color: #cbcbcb;
+  width: 75px;
+  border: solid 0.5px;
+  margin-top: 10px;
+}
+.small-txt {
+  font-size: 13px !important;
+  color: #222;
+}
+[class^="portfolio_section_box-"] {
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.items {
+  background-color: #000;
+  background-size: cover;
+}
+.portfolio_section_box-1 {
+  background-image: url(/img/Taxi97-ads.png);
+}
+.portfolio_section_box-1:hover {
+  opacity: 0.7;
+}
+.portfolio_section_box-2 {
+  background-image: url(/img/offert.png);
+}
+.portfolio_section_box-2:hover {
+  opacity: 0.7;
+}
+.portfolio_section_box-3 {
+  background-image: url(/img/Meny.png);
+}
+.portfolio_section_box-3:hover {
+  opacity: 0.7;
+}
+.portfolio_section_box-4 {
+  background-image: url(/img/fotografi.png);
+}
+.portfolio_section_box-4:hover {
+  opacity: 0.7;
+}
+.portfolio_section_box-5 {
+  background-image: url(/img/hemsida.png);
+}
+.portfolio_section_box-5:hover {
+  opacity: 0.7;
+}
+.portfolio_section_box-6 {
+  background-image: url(/img/logo.png);
+}
+.portfolio_section_box-6:hover {
+  opacity: 0.7;
+}
+.portfolio-item {
+  font-family: poppins;
+  font-weight: 600;
+  opacity: 1 !important;
+  color: #fff;
+  background-color: #000;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 100px 0 10px 0;
+  overflow: hidden;
+  background: #111111;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+.txt-center {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 32px;
+  height: 200px;
+  text-align: center;
+}
+h6 {
+  font-size: 18px;
+  line-height: 44px;
+  font-weight: 400;
+}
+h6:hover {
+  color: red;
+}
+.socialmedia {
+  color: white;
+  text-align: center;
+}
+li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 20px;
+}
+
+/*------------ About page styling -------------*/
+.about-section {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  padding-top: 150px;
+}
+.about-area {
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.about-area h6 {
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 400;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin: px 0 30px 0;
+}
+.about-area h1 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 3.5rem;
+}
+.about-area h4 {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  line-height: 1.4;
+}
+.about-area p {
+  color: #888888;
+  font-size: 13px;
+  line-height: 1.8;
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.4px;
+}
+.detail-section {
+  padding-top: 40px;
+}
+.detail-section h1 {
+  font-size: 28px;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.detail-section h3 {
+  font-size: 16px !important;
+  text-align: left;
+}
+
+.detail-section li {
+  padding: 10px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #e7e7e7;
+  border-radius: 8px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: rgb(190, 190, 190);
+  border-radius: 80px;
+  background-size: 20px 15px, 100% 100%, 100% 100%;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .about-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .about-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

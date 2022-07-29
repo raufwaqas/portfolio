@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Waqas Rauf</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/animation.css">
+  <link rel="stylesheet" type="text/css" href="/css/ionicons.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+
+  <div class="wrapper">
+
+    <div id="side-menu">
+
+      <div class="menu-container">
+
+        <div class="nav-trigger" role="button" title="sweet hamburger">
+          <div class="hamburger" onclick="openNav()">
+            <div class="icon ">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="logo hidden-xs" href="index.html">Waqas Rauf</a>
+      <a class="logo text visible-xs" href="index.html">WR</a>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="sidenav_menu">
+        <a href="index.html" class="navigation_menu">Home</a>
+        <a href="portfolio.html" class="navigation_menu portfolio-visible">Portfolio</a>
+        <a href="about.html" class="navigation_menu about-visible">Biography</a>
+        <a href="contact.html" class="navigation_menu contact-visible">Contact</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="about-section">
+    <div class="about-area">
+      <div class="contact-form"></div>
+      <div class="contact-form">
+        <form id="contact-form" method="post" action="/php/contact.php" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_name">Firstname *</label>
+                  <input id="form_name" type="text" name="name" class="form-control"
+                    placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_lastname">Lastname *</label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control"
+                    placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Email *</label>
+                  <input id="form_email" type="email" name="email" class="form-control"
+                    placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_phone">Phone</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control"
+                    placeholder="Please enter your phone">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_message">Message *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
+                    rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    <div class="container">
+      <div class="txt-center">Feel free to contact me!
+        </br>
+        <h6>mail@waqasrauf.com</h6>
+        <h6>+46 700 123 456 789</h6>
+      </div>
+      <div class="socialmedia">
+        <ul>
+          <li>Facebook</li>
+          <li>Linkedin</li>
+          <li>Github</li>
+        </ul>
+      </div>
+      <div class="address"></div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>
