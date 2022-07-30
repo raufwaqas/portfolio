@@ -289,6 +289,22 @@ h1 {
   height: 400px;
   color: white;
 }
+@media only screen and (max-width: 900px) {
+  .desc {
+    width: 80% !important;
+  }
+  .desc h3 {
+    font-size: 26px !important;
+  }
+  .portfolio-grid {
+    width: 80% !important;
+  }
+  .portfolio_section_box-1 {
+    width: 320px !important;
+    height: auto !important;
+  }
+}
+
 @media only screen and (min-width: 767px) {
   .logo {
     font-size: 18px;
@@ -321,6 +337,9 @@ h1 {
   h3 {
     font-size: 25px !important;
     text-align: left !important;
+  }
+  .portfolio-intro {
+    padding: 40px;
   }
 }
 .desc {
@@ -586,3 +605,72 @@ progress[value]::-webkit-progress-value {
   }
 }
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+/* Contact page */
+.kontakt {
+  display: block;
+}
+.contact-section {
+  display: flex;
+  min-height: 80vh;
+  justify-content: center;
+}
+.contact-section-area {
+  width: 70%;
+  padding-top: 125px;
+}
+.contact-section-heading h3 {
+  text-align: left;
+}
+.contact-section-form {
+  width: 50%;
+}
+.form-message {
+  width: 100%;
+  height: 100px;
+  font-family: Poppins;
+}
+.form-group {
+  display: inline-block;
+  width: 49.5%;
+  padding-top: 30px;
+  font-family: Poppins;
+}
+.label {
+  display: block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  text-align: left;
+  border-radius: 0px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  border: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  background: transparent;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #999999;
+  -webkit-box-shadow: inset 0 0px 0px rgb(0 0 0 / 0%);
+  box-shadow: inset 0 0px 0px rgb(0 0 0 / 0%);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.help-block {
+  font-family: Poppins;
+  font-weight: 300;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}

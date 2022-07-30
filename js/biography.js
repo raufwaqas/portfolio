@@ -51,43 +51,6 @@ let additionalExperience = [
   },
 ];
 
-// // Education
-// let education =[
-//   {
-//     section-title:"",
-//     title: `Bachelor's In Multimedia`,
-//     employment: ``,
-//     year: "Areena Multimedia",
-//     detail: ``,
-//     education: "",
-//     institute: "",
-//     skill: "",
-//     extra:"",
-//   },
-//   {
-//     section-title:"",
-//     title: `Intermediate Degree in Computer Science`,
-//     employment: ``,
-//     year: "Punjab college of information Technology",
-//     detail: ``,
-//     education: "",
-//     institute: "",
-//     skill: "",
-//     extra:"",
-//   },
-//   {
-//     section-title:"",
-//     title: `Redovisning Kurs (BAS)`,
-//     employment: ``,
-//     year: "Folkuniversitetet Malmö",
-//     detail: ``,
-//     education: "",
-//     institute: "",
-//     skill: "",
-//     extra:"",
-//   },
-// ];
-
 // education
 let education = [
   {
@@ -183,3 +146,39 @@ let developerSkills = [
 // institute: "",
 // skill: "",
 // extra:"",
+
+// {
+// "Post": {
+//   "cover": {
+//     "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
+//   },
+//   "title": {
+//     "loremWords": {
+//       "minLength": 5,
+//       "maxLength": 20
+//     }
+//   },
+//   "body": {
+//     "loremParagraphs": {
+//       "minLength": 10,
+//       "maxLength": 100
+//     }
+//   },
+//   "tag": {
+//     "string": [
+//       "one",
+//       "two",
+//       "three"
+//     ]
+//   },
+//   "isDraft": {
+//     "boolean": {}
+//   },
+//   "createdAt": {
+//     "dateTime": {
+//       "min": "2010-01-01T00:00:00Z",
+//       "max": "2020-12-31T23:59:59Z"
+//     }
+//   }
+// }
+// }

@@ -24,6 +24,8 @@ let portfoliotemplate = (data) => {
 `;
 };
 
-portfolioGrid.innerHTML = portfolioData.map((item) => {
-  return portfoliotemplate(item);
-});
+portfolioGrid.innerHTML = portfolioData
+  .map((item) => {
+    return portfoliotemplate(item);
+  })
+  .join("");
