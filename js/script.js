@@ -10,12 +10,12 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 }
 
-let fetchData = async () => {
-  return await fetch()
-    .then((res) => res.json())
-    .then((res) => {
-      let brandName = document.getElementById("brand-name");
-      // brandName.innerHTML
-    })
-    .catch((err) => console.log(err));
-};
+// let fetchData = async () => {
+//   return await fetch()
+//     .then((res) => res.json())
+//     .then((res) => {
+//       let brandName = document.getElementById("brand-name");
+//       // brandName.innerHTML
+//     })
+//     .catch((err) => console.log(err));
+// };

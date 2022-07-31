@@ -17,6 +17,11 @@
 </head>
 
 <body>
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js'
+    import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js'
+    import { firestore } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js'
+  </script>
   <!-- Header -->
   <div class="wrapper">
 
@@ -95,6 +100,26 @@
   <script src="js/portfolio-template.mjs" type="module"></script>
   <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDPoGt1fTegyu2KihP0SkLNiAXK91NaUt4",
+      authDomain: "personal-portfolio-6c4f9.firebaseapp.com",
+      projectId: "personal-portfolio-6c4f9",
+      storageBucket: "personal-portfolio-6c4f9.appspot.com",
+      messagingSenderId: "41033403930",
+      appId: "1:41033403930:web:a3930bb2810cb4e7c7cba3"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
 </body>
 
 </html>
